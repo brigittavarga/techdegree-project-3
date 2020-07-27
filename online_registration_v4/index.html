@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Online Registration Form</title>
+</head>
+<body>
+
+    <header>
+        <h2>the code review</h2>
+    </header>
+
+    <div class="container">
+
+        <h1>Signup to our newsletter</h1>
+        <p>Get the latest news on how your code is doing right in your inbox</p>
+
+        <hr>
+
+        <form action="index.html" method="post">
+
+        <fieldset id="contact">
+
+            <legend>contact information</legend>
+
+            <label for="name">full name</label>
+            <input type="text" id="name" name="user_name" placeholder="Required" required>
+
+            <br>
+
+            <label for="email">email address</label>
+            <input type="email" id="mail" name="user_email" placeholder="Required" required>
+
+            <br>
+
+            <label for="phone">phone number</label>
+            <input type="number" id="phone" name="user_phone">
+
+            <br>
+
+            <label for="address">street address</label>
+            <input type="text" id="address" name="user_address">
+
+            <br>
+
+            <label for="city">city</label>
+            <input type="text" id="city" name="user_city">
+
+            <br>
+
+            <label for="state">state</label>
+            <select name="user_state" id="state">
+                <option value="default">Choose state</option>
+                <option value="new york">New york</option>
+                <option value="california">California</option>
+                <option value="florida">Florida</option>
+                <option value="texas">Texas</option>
+                <option value="new_jersey">New Jersey</option>
+                <option value="washington">Washington</option>
+                <option value="michigan">Michigan</option>
+                <option value="pennsylvania">Pennsylvania</option>
+                <option value="ohio">Ohio</option>
+                <option value="arizona">Arizona</option>
+                <option value="massachusetts">Massachusetts</option>
+                <option value="alaska">Alaska</option>
+            </select>
+
+            <br>
+
+            <label for="zip">zip code</label>
+            <input type="text" id="zip" name="user_zip">
+
+        </fieldset>
+
+            <hr>
+
+        <fieldset id="newsletter">
+
+            <legend>Newsletter</legend>
+
+            <p>Select the newsletters you would like to receive</p>
+
+            <input type="checkbox" id="html_news" name="html_news" value="html">
+            <label for="html_news">HTML News</label>
+
+            <br>
+
+            <input type="checkbox" id="css_news" name="css_news" value="css">
+            <label for="css_news">CSS News</label>
+
+            <br>
+
+            <input type="checkbox" id="js_news" name="js_news" value="javascript">
+            <label for="js_news">JavaScript News</label>
+
+            <p>Newsletter format</p>
+
+            <input type="radio" id="html_format" name="html_format" value="html_format">
+            <label for="html_format">HTML format</label>
+
+            <br>
+
+            <input type="radio" id="text_format" name="text_format" value="text_format">
+            <label for="text_format">Plain text</label>
+
+            <p>Other topics you`d like to hear aobut</p>
+
+            <textarea name="other" id="other" cols="30" rows="10"></textarea>
+
+            <br>
+
+            <button type="submit">Sign Up</button>
+
+        </fieldset>
+
+        </form>
+
+        <p class="copyright">
+            Copyright The Code Review
+        </p>
+
+    </div>
+
+</body>
+</html>
