@@ -4,116 +4,114 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <title>Online Registration Form</title>
 </head>
 <body>
 
     <header>
-        <h2>the code review</h2>
+        <h1>the code review</h1>
+        <h2>Signup to our newsletter</h2>
+        <p>Get the latest news on how your code is doing right in your inbox</p>
     </header>
 
     <div class="container">
 
-        <h1>Signup to our newsletter</h1>
-        <p>Get the latest news on how your code is doing right in your inbox</p>
-
-        <hr>
-
         <form action="index.html" method="post">
 
-        <fieldset id="contact">
+            <fieldset id="contact">
 
-            <legend>contact information</legend>
+                <legend>contact information</legend>
 
-            <label for="name">full name</label>
-            <input type="text" id="name" name="user_name" placeholder="Required" required>
+                <label for="name">full name</label>
+                <input type="text" id="name" name="user_name" placeholder="Required" required>
 
-            <br>
+                <br>
 
-            <label for="email">email address</label>
-            <input type="email" id="mail" name="user_email" placeholder="Required" required>
+                <label for="email">email address</label>
+                <input type="email" id="mail" name="user_email" placeholder="Required" required>
 
-            <br>
+                <br>
 
-            <label for="phone">phone number</label>
-            <input type="number" id="phone" name="user_phone">
+                <label for="phone">phone number</label>
+                <input type="number" id="phone" name="user_phone" placeholder="Optional">
 
-            <br>
+                <br>
 
-            <label for="address">street address</label>
-            <input type="text" id="address" name="user_address">
+                <label for="address">street address</label>
+                <input type="text" id="address" name="user_address">
 
-            <br>
+                <br>
 
-            <label for="city">city</label>
-            <input type="text" id="city" name="user_city">
+                <label for="city">city</label>
+                <input type="text" id="city" name="user_city">
 
-            <br>
+                <br>
 
-            <label for="state">state</label>
-            <select name="user_state" id="state">
-                <option value="default">Choose state</option>
-                <option value="new york">New york</option>
-                <option value="california">California</option>
-                <option value="florida">Florida</option>
-                <option value="texas">Texas</option>
-                <option value="new_jersey">New Jersey</option>
-                <option value="washington">Washington</option>
-                <option value="michigan">Michigan</option>
-                <option value="pennsylvania">Pennsylvania</option>
-                <option value="ohio">Ohio</option>
-                <option value="arizona">Arizona</option>
-                <option value="massachusetts">Massachusetts</option>
-                <option value="alaska">Alaska</option>
-            </select>
+                <label for="state">state</label>
+                <select name="user_state" id="state">
+                    <option value="default">Choose state</option>
+                    <option value="new york">New york</option>
+                    <option value="california">California</option>
+                    <option value="florida">Florida</option>
+                    <option value="texas">Texas</option>
+                    <option value="new_jersey">New Jersey</option>
+                    <option value="washington">Washington</option>
+                    <option value="michigan">Michigan</option>
+                    <option value="pennsylvania">Pennsylvania</option>
+                    <option value="ohio">Ohio</option>
+                    <option value="arizona">Arizona</option>
+                    <option value="massachusetts">Massachusetts</option>
+                    <option value="alaska">Alaska</option>
+                </select>
 
-            <br>
+                <br>
 
-            <label for="zip">zip code</label>
-            <input type="text" id="zip" name="user_zip">
+                <label for="zip">zip code</label>
+                <input type="text" id="zip" name="user_zip">
 
-        </fieldset>
+            </fieldset>
 
             <hr>
 
-        <fieldset id="newsletter">
+            <fieldset id="newsletter">
 
-            <legend>Newsletter</legend>
+                <legend>Newsletter</legend>
 
-            <p>Select the newsletters you would like to receive</p>
+                <p>Select the newsletters you would like to receive</p>
 
-            <input type="checkbox" id="html_news" name="html_news" value="html">
-            <label for="html_news">HTML News</label>
+                <input type="checkbox" id="html_news" name="html_news" value="html">
+                <label for="html_news">HTML News</label>
 
-            <br>
+                <br>
 
-            <input type="checkbox" id="css_news" name="css_news" value="css">
-            <label for="css_news">CSS News</label>
+                <input type="checkbox" id="css_news" name="css_news" value="css">
+                <label for="css_news">CSS News</label>
 
-            <br>
+                <br>
 
-            <input type="checkbox" id="js_news" name="js_news" value="javascript">
-            <label for="js_news">JavaScript News</label>
+                <input type="checkbox" id="js_news" name="js_news" value="javascript">
+                <label for="js_news">JavaScript News</label>
 
-            <p>Newsletter format</p>
+                <p>Newsletter format</p>
 
-            <input type="radio" id="html_format" name="html_format" value="html_format">
-            <label for="html_format">HTML format</label>
+                <input type="radio" id="html_format" name="html_format" value="html_format">
+                <label for="html_format">HTML format</label>
 
-            <br>
+                <br>
 
-            <input type="radio" id="text_format" name="text_format" value="text_format">
-            <label for="text_format">Plain text</label>
+                <input type="radio" id="text_format" name="text_format" value="text_format">
+                <label for="text_format">Plain text</label>
 
-            <p>Other topics you`d like to hear aobut</p>
+                <br>
 
-            <textarea name="other" id="other" cols="30" rows="10"></textarea>
+                <label for="textarea">Other topics you`d like to hear about</label><br>
+                <textarea name="other" id="other" cols="30" rows="10"></textarea>
 
-            <br>
+                <br>
+                <button type="submit">Sign Up</button>
 
-            <button type="submit">Sign Up</button>
-
-        </fieldset>
+            </fieldset>
 
         </form>
 
