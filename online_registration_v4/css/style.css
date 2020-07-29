@@ -148,11 +148,13 @@ textarea {
     width: 100%;
     margin-top: 20px;
     margin-bottom: 30px;
+    padding: 20px;
 }
 
 textarea:focus {
     outline-color: #2D3945;
 }
+
 
 /* --------- BUTTONS --------- */
 
@@ -169,19 +171,32 @@ button {
  /* --------- MEDIA QUERIES --------- */
  
   @media (min-width: 769px) {
-    div.signup,
+    
     .container {
-        max-width: 50%;
+        width: 50%;
+        margin: auto;
+    }
+
+    .flex-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .flex-container input {
+        width: 30%;
+    }
+
+    /*div.signup,
+    .container {
+        width: 50%;
         margin: 0 auto;
     }
 
     #contact {
-        display: flex;
-        flex-direction: column;
-    }
+        display: inline-flex;
+        flex-direction: row;
+        justify-items: space-around;
+    } */
 
-    #contact input,
-    #contact select {
-        min-width: 70%;
-    }
   }
