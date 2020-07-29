@@ -2,7 +2,7 @@
 MAIN COLORS
 Lighter grey: #55687A;
 Dark blue: #2D3945;
-Tale (button): #4EBBB5; 
+Tale: #4EBBB5; 
 */
 
 * {
@@ -31,7 +31,7 @@ h1 {
 }
 
 h2 {
-    color: #2D3945;
+    color: #fff;
     margin-bottom: 15px;
     font-size: 1.35rem;
 }
@@ -48,7 +48,10 @@ h2 {
  }
 
  .signup {
-     padding: 0 20px 20px 20px;
+     padding: 20px;
+     background-color: #4EBBB5; 
+     color: #fff;
+     margin-bottom: 20px;
  }
 
  header p {
@@ -100,11 +103,14 @@ h2 {
     padding: 20px;
     margin-bottom: 15px;
     margin-top: 15px;
-    background-color: #e8e8e8;
     border: none;
     border-radius: 5px;
     font-family: 'Merriweather', serif;
     font-style: italic;
+}
+
+input {
+    background-color: #e8e8e8;
 }
 
 input::placeholder {
@@ -113,7 +119,65 @@ input::placeholder {
 
 input:focus {
     outline-color: #2D3945;
+    background-color: #4EBBB5; 
+    transition: background-color 2s ease;
+    color: #fff;
 }
+
+input[type='radio']:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #d1d3d1;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+input[type='radio']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #4EBBB5;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+input[type='checkbox']:after {
+    width: 15px;
+    height: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #d1d3d1;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+input[type='checkbox']:checked:after {
+    width: 15px;
+    height: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #4EBBB5;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
 
 #state {
     background-color: #e8e8e8;
