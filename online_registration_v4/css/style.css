@@ -70,7 +70,7 @@ h2 {
  }
 
  .flex-container {
-    display: grid;
+    display: flex;
     flex-direction: column;
 }
 
@@ -100,7 +100,6 @@ h2 {
     padding: 20px;
     margin-bottom: 15px;
     margin-top: 15px;
-    min-width: 100%;
     background-color: #e8e8e8;
     border: none;
     border-radius: 5px;
@@ -121,7 +120,6 @@ input:focus {
     padding: 20px;
     border: none;
     border-radius:5px;
-    width: 100%;
     color: grey;
     font-family: 'Merriweather', serif;
     font-size: 1rem;
@@ -184,6 +182,13 @@ button {
 
     .flex-container {
         flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .flex-container input,
+    .flex-container select {
+        width: 70%;
     }
 
 
