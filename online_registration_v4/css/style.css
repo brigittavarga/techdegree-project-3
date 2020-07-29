@@ -111,6 +111,7 @@ h2 {
 
 input {
     background-color: #e8e8e8;
+    transition: background-color 2s ease;
 }
 
 input::placeholder {
@@ -120,7 +121,6 @@ input::placeholder {
 input:focus {
     outline-color: #2D3945;
     background-color: #4EBBB5; 
-    transition: background-color 2s ease;
     color: #fff;
 }
 
