@@ -14,7 +14,7 @@ Tale (button): #4EBBB5;
 body {
     font-family: 'Merriweather', serif;
     font-size: 16px;
-    color: #55687A;
+    color: #b0b0b0;
  }
 
  p {
@@ -42,9 +42,13 @@ h2 {
     text-transform: capitalize;
  }
 
- header {
+ header,
+ .signup {
     text-align: center;
-    margin: 0 20px 0 20px;
+ }
+
+ .signup {
+     padding: 0 20px 20px 20px;
  }
 
  header p {
@@ -52,12 +56,13 @@ h2 {
  }
 
  .hr-1 {
-     border: 2px solid #2D3945;
-     margin-bottom: 10px;
+     border: 3px solid #2D3945;
+     margin-bottom: 5px;
  }
 
  .hr-2 {
      border: 1px solid #2D3945;
+     margin-bottom: 30px;
  }
 
  .container {
@@ -67,6 +72,7 @@ h2 {
  fieldset {
      border: none;
      margin-top: 20px;
+     margin-bottom: 30px;
  }
 
  legend {
@@ -76,8 +82,84 @@ h2 {
      margin-bottom: 20px;
  }
 
+ .copyright {
+     text-align: center;
+     margin-bottom: 150px;
+     font-style: italic;
+     font-size: 1rem;
+ }
+
+/* --------- STYLING FORMS --------- */
+
+#contact input {
+    padding: 20px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    min-width: 100%;
+    background-color: #e8e8e8;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Merriweather', serif;
+    font-style: italic;
+}
+
+input::placeholder {
+    text-align: right;
+}
+
+input:focus {
+    outline-color: #2D3945;
+}
+
+#state {
+    background-color: #e8e8e8;
+    padding: 20px;
+    border: none;
+    border-radius:5px;
+    width: 100%;
+    color: grey;
+    font-family: 'Merriweather', serif;
+    font-size: 1rem;
+}
+
+select {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#newsletter p {
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+#newsletter input {
+    margin: 0 15px 15px 0;
+}
+
+textarea {
+    background-color: #e8e8e8;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+textarea:focus {
+    outline-color: #2D3945;
+}
+
+/* --------- BUTTONS --------- */
+
 button {
-     font-size: 2rem;
+     font-size: 1.35rem;
+     font-family: 'Merriweather', serif;
+     width: 100%;
+     padding: 20px 0 20px 0;
+     border: none;
+     border-radius: 5px;
+     background-color: #4EBBB5; 
+     color: #fff;
  }
 
  /* --------- MEDIA QUERIES --------- 
