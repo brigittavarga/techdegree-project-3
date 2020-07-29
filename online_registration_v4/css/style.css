@@ -17,18 +17,67 @@ body {
     color: #55687A;
  }
 
+ p {
+    font-size: 1.1rem;
+}
+
 h1 {
     text-transform: uppercase;
     color: white;
     background-color: #2D3945;
+    font-size: 1.5rem;
+    padding: 20px;
+    margin-bottom: 30px;
 }
 
- legend {
+h2 {
+    color: #2D3945;
+    margin-bottom: 15px;
+    font-size: 1.35rem;
+}
+
+ legend,
+ #contact label,
+ .copyright {
     text-transform: capitalize;
  }
 
  header {
     text-align: center;
+    margin: 0 20px 0 20px;
+ }
+
+ header p {
+     margin-bottom: 30px;
+ }
+
+ .hr-1 {
+     border: 2px solid #2D3945;
+     margin-bottom: 10px;
+ }
+
+ .hr-2 {
+     border: 1px solid #2D3945;
+ }
+
+ .container {
+     margin: 0 30px 0 30px;
+ }
+
+ fieldset {
+     border: none;
+     margin-top: 20px;
+ }
+
+ legend {
+     font-size: 1.35rem;
+     font-weight: bold;
+     color: #2D3945;
+     margin-bottom: 20px;
+ }
+
+button {
+     font-size: 2rem;
  }
 
  /* --------- MEDIA QUERIES --------- 
