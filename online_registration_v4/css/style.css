@@ -1,11 +1,41 @@
+/* 
+MAIN COLORS
+Lighter grey: #55687A;
+Dark blue: #2D3945;
+Tale (button): #4EBBB5; 
+*/
+
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
     font-family: 'Merriweather', serif;
     font-size: 16px;
+    color: #55687A;
  }
 
- /* --------- MEDIA QUERIES --------- */
+h1 {
+    text-transform: uppercase;
+    color: white;
+    background-color: #2D3945;
+}
+
+ legend {
+    text-transform: capitalize;
+ }
+
+ header {
+    text-align: center;
+ }
+
+ /* --------- MEDIA QUERIES --------- 
+ 
+  @media (min-width: 769px)
+
+  @media (min-width: 1024px)
+  
+  */
  
